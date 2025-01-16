@@ -24,6 +24,7 @@ def run_streamlit_app():
 
     # Input fields for features
     st.header('Enter Feature Values')
+    customerId = st.number_input('CustomerID', min_value=0.0)
     surname = st.selectbox('Surname', data['Surname'].unique())
     CreditScore = st.number_input('CreditScore', min_value=0.0)
     Geography = st.selectbox('Geography', data['Geography'].unique())
@@ -45,7 +46,7 @@ def run_streamlit_app():
 
         # Construct input features array
         input_features = np.array([[
-            surname_encoded, CreditScore, geography_encoded, gender_encoded,
+            customerId,surname_encoded, CreditScore, geography_encoded, gender_encoded,
             Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember,
             EstimatedSalary, Exited
         ]])
