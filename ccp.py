@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 
 # Load the dataset
-data = pd.read_csv("C:\\Users\\HP\\Downloads\\Churn_Modelling.csv")
+data = pd.read_csv("Churn_Modelling.csv")
 
 def run_streamlit_app():
     """Create and run the Streamlit web application"""
