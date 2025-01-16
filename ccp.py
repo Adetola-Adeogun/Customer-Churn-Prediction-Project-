@@ -12,7 +12,7 @@ def run_streamlit_app():
     st.title('Customer Churn Prediction')
 
     # Load the saved model
-    with open('C:\\Users\\HP\\Downloads\\random_forest_model.pkl', 'rb') as file:
+    with open('random_forest_model.pkl', 'rb') as file:
         model = pickle.load(file)
 
     # Create LabelEncoders for categorical features
